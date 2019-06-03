@@ -1,6 +1,6 @@
 //------------------------------------------------------------//
 //************************************************************//
-//         The Bottle Algorithm                               //
+//                 The Bottle Algorithm                       //   
 //___________________________________________________________ //
 // Let's say we have the following problem:                   //
 // We have two water tanks,                                   //
@@ -123,9 +123,9 @@ public class Bottle {
 	
 	
 	
-	
-	
-	
+	 //--------------------//
+	//        main        //
+       //--------------------//
 	
 	
 	public static void main(String[] args) {
