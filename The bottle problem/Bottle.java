@@ -64,7 +64,7 @@ public class Bottle {
 			/**
 			 * using the following method:
 			 * we compare two nodes(the pair(A,B))
-			 * and we get true in the same node if :
+			 * and we get true in the same index if :
 			 * we can deplete bottle A or B and to get the other node
 			 * or if we can fill up A or B and to get the other node
 			 * or we can pour from A to B or from B to A and to get the other node
