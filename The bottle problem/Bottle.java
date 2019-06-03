@@ -29,14 +29,8 @@ public class Bottle {
 			this.b=n;
 			this.a=m;
 		}
-		public int a() {
-			return a;
-		}
-		public int b() {
-			return b;
-		}
 		public String toString() {
-			return "("+a()+","+b()+")";
+			return "("+a+","+b+")";
 		}
 	}
 	
