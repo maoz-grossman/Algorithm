@@ -61,15 +61,17 @@ public class Bottle {
 					mat[i][j]= false;
 				}
 			}
-			/**
-			 * using the following method:
-			 * we compare two nodes(the pair(A,B))
-			 * and we get true in the same index if :
-			 * we can deplete bottle A or B and to get the other node
-			 * or if we can fill up A or B and to get the other node
-			 * or we can pour from A to B or from B to A and to get the other node
-			 * else  we get false
-			 */
+                /**
+		 * using the following method:
+		 * we compare two nodes(the pair(A,B))
+		 * i1- represents the node we have
+		 * index(...) or i2- represent the node we compare to 
+		 * and we get true in the same index if :
+		 * we can deplete bottle A or B and to get the other node
+		 * or if we can fill up A or B and to get the other node
+		 * or we can pour from A to B or from B to A and to get the other node
+		 * else  we get false
+		 */
 			for (int i=0; i<=m; i++){
 				for (int j=0; j<=n; j++){
 					int i1 = index(i,j,n);
