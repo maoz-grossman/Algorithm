@@ -18,9 +18,9 @@
 
 public class Bottle {
 	
-	//-------------------------//
+	 //-------------------------//
 	// The  nodes of the graph //
-	//------------------------//
+       //-------------------------//
 	
 	public class Bottles{
 		// A pair of bottles looks like (A,B)
@@ -65,9 +65,10 @@ public class Bottle {
 		 * using the following method:
 		 * we compare two nodes(the pair(A,B))
 		 * i1- represents the node we have
-		 * index(...) or i2- represent the node we compare to 
+		 * index(...) or i2- represent the node we compare to
+		 * and mat[i1][index(...)] is the intersection between the values
 		 * and we get true in the same index if :
-		 * we can deplete bottle A or B and to get the other node
+		 * we can empty the bottle A or B and to get the other node
 		 * or if we can fill up A or B and to get the other node
 		 * or we can pour from A to B or from B to A and to get the other node
 		 * else  we get false
@@ -75,8 +76,8 @@ public class Bottle {
 			for (int i=0; i<=m; i++){
 				for (int j=0; j<=n; j++){
 					int i1 = index(i,j,n);
-					mat[i1][index(0,j,n)]=true;//we deplete A 
-					mat[i1][index(i,0,n)]=true;//we deplete B
+					mat[i1][index(0,j,n)]=true;//we empty A 
+					mat[i1][index(i,0,n)]=true;//we empty B
 					mat[i1][index(i,n,n)]=true;//we fill B up
 					mat[i1][index(m,j,n)]=true;//we fill A up 
 					int i2=index(Math.max(0,i+j-n),Math.min(n,i+j) ,n);//we pour A -> B
@@ -87,7 +88,7 @@ public class Bottle {
 			}
 			
 			for (int j=0; j<dim; j++){
-				mat[j][j]= false; //fills the diagonals with false 
+				mat[j][j]= false; //fills the diagonal with false 
 			}
 	
 			
@@ -100,7 +101,7 @@ public class Bottle {
 					
 				}
 			}
-			//copy the boolean matrix to our matrix
+			//copy the boolean matrix to the main matrix
 			for(int i=1;i<matt.length;i++)
 				for(int j=1;j<matt.length;j++)
 					matt[i][j]=mat[i-1][j-1];
