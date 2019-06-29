@@ -3,7 +3,7 @@ import java.util.Stack;
 public class Nivash_Algo {
 	/**
 	 * the basic algorithm of cycle detection with stack
-	 * it works on O(n)
+	 * it works in O(n)
 	 * 
 	 */
 	interface Foo<T>{  // function we work on 
@@ -50,7 +50,7 @@ public class Nivash_Algo {
 			x=(Integer) f.f(x);
 			time++;
 			if(S.size()==n) {
-				System.out.println("no no repetition was detected");
+				System.out.println("no repetition was detected");
 				return 0;//the sequence has not become periodic 
 			}
 		 }
