@@ -1,19 +1,19 @@
-﻿
-//---------------------------------------------------------------------------------------------------
-//**************************************************************
-//                                               Floyd-Warshall                                                                                    
-// ______________________________________________________________________
-//  Given a matrix representing the graph,                                                                     
-//  Floyd-Warshall's algorithm is an algorithm                                                                
-//  for finding shortest paths in a weighted graph with                                                   
-//  positive or negative edge weights                                                                           
-//  (but with no negative cycles).                                                                                  
-//  The Floyd–Warshall algorithm compares all possible paths                                        
-//  through the graph between each pair of vertices.                                                     
-//  It is able to do this with O (|V|^3) comparisons in a graph.                                      
-//                                                                                                                            
-//**************************************************************
-//---------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------//
+//***************************************************************//
+//                       Floyd-Warshall                          //   
+//_______________________________________________________________//
+// Given a matrix representing the graph,                        //
+// Floyd-Warshall's algorithm is an algorithm                    //
+// for finding shortest paths in a weighted graph with           //
+// positive or negative edge weights                             //
+// (but with no negative cycles).                                //
+// The Floyd–Warshall algorithm compares all possible paths      //
+// through the graph between each pair of vertices.              //
+// It is able to do this with O (|V|^3) comparisons in a graph.  //
+//                                                               //
+//***************************************************************//
+//---------------------------------------------------------------//
 
 
 
@@ -40,9 +40,9 @@ public class FW {
 	}
 	
 	
-	     //---------------------------------//
-                  // Building the distance matrix // 
-	   //---------------------------------//
+	     //------------------------------//
+	    // Building the distance matrix // 
+	   //------------------------------//
 		
 	
 	private void Floyd_Warshall(){
@@ -86,7 +86,7 @@ public class FW {
 	
 	
 	     //--------------------//
-                  //        main          //
+	    //        main        //
 	   //--------------------//
 		
 
