@@ -1,3 +1,3 @@
 # Algorithm
 
-All agorithm we saw in class
+All algorithm we saw in class
