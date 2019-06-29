@@ -69,7 +69,7 @@ public class Gamealgo extends Thread{
 			cleanscreen();
 				
 		}
-		System.out.printf("Game over: you got %d and i got %d",foeSum,sum);
+		System.out.printf("Game over: you have %d and i have %d",foeSum,sum);
 		
 		
 	}
