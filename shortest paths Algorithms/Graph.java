@@ -1,7 +1,7 @@
 //***************************************************************//
 //                           Graph                               //   
 //_______________________________________________________________//
-// The is given as a vector of LinkedList                        //
+// The graph is given as a vector of LinkedList                  //
 // each LinkedList contains main vertex (Adj[v]),                //
 // and all vertices that are connected to it.                    //
 // it helps in some algorithms such as Dijkstra,BFS,DFS etc      //
