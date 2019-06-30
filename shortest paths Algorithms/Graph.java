@@ -21,7 +21,7 @@ public class Graph {
 	
 	
 	//-----------------//
-	// 	vertex class   //
+	//  vertex class   //
 	//-----------------//
 	public class Vertex{
 		 private int name;
@@ -49,8 +49,8 @@ public class Graph {
 	}
 	
 	
-	    //-----------------//
-		// 	Graph methods  //
+	        //-----------------//
+		//  Graph methods  //
 		//-----------------//
 	
 	// adjacent vertices list 
