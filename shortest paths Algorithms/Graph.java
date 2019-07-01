@@ -61,10 +61,12 @@ public class Graph {
 
 		for(int i=0;i < graph.length;i++) {
 			LinkedList<Vertex> list= new LinkedList<>();
+			Vertex v= new Vertex(i,0);
+			list.add(v);
 			for(int j=0;j< graph.length; j++) {
-				if(graph[i][j]!=infinity) {
-					Vertex v= new Vertex(j,graph[i][j]);
-					list.add(v);
+				if(graph[i][j]!=infinity&&graph[i][j]!=0) {
+					Vertex v_Adj= new Vertex(j,graph[i][j]);
+					list.add(v_Adj);
 				}
 			}
 			Adj.add(list);
