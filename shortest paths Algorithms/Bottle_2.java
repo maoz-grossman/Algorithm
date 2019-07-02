@@ -46,7 +46,7 @@ public class Bottle_2 {
 	
 	
 	     //--------------------------//
-		//    Building the graph    // 
+	    //    Building the graph    // 
 	   //--------------------------//
 	
 	private static int[][] initMatrBottleWeight(int m, int n){
@@ -92,7 +92,7 @@ public class Bottle_2 {
 	
 		 //--------------------//
 		//        main        //
-	   //--------------------//
+	       //--------------------//
 	
 	public static void main(String[] args) {
 		int m=3, n=5;//m-the first bottle, n-the second bottle
