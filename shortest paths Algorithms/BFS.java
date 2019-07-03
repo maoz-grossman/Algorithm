@@ -1,3 +1,19 @@
+//-------------------------------------------------------------//
+//*************************************************************//
+//                  Breadth-first search                       //   
+//____________________________________________________________ //
+// Breadth-first search (BFS) is an algorithm for traversing   //
+// or searching tree or graph data structures.                 //
+// It starts at the tree root (or some arbitrary node of       // 
+// a graph, sometimes referred to as a 'search key'[1]),       //
+// and explores all of the neighbor nodes at the present depth // 
+// prior to moving on to the nodes at the next depth level.    //
+//*************************************************************//
+//-------------------------------------------------------------//
+
+
+
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -29,6 +45,11 @@ public class BFS {
 		initiate(G);
 	}
 	
+	
+	//--------------------//
+	//   build the tree   //
+	//--------------------//
+	
 	private void initiate(Graph G) {
 		while(!Q.isEmpty()) {
 			Graph.Vertex u= Q.poll();
@@ -46,6 +67,12 @@ public class BFS {
 	}
 	
 	
+	
+	//---------------------------------------------//
+	//  Get the shortest path to a specific vertex //
+	//---------------------------------------------//
+	
+	
 	public String Get_path(Graph.Vertex v) {
 		String path="";
 		Graph.Vertex par=parent[v.name()];
@@ -60,7 +87,12 @@ public class BFS {
 	
 	
 	
+	//--------------------//
+	//   main function    //
+	//--------------------//
+	
 	public static void main(String[] args) {
+		//Graph.infinity==Integer.MAX_VALUE
 		int[][]w= {{0,1,6,Graph.infinity},{Graph.infinity,0,4,1},{Graph.infinity,Graph.infinity,0,Graph.infinity},{Graph.infinity,Graph.infinity,1,0}};
 		Graph g=new Graph(w);
 		Graph.Vertex _s= g.Adj.get(0).element();
@@ -68,5 +100,11 @@ public class BFS {
 		String path = bfs.Get_path(g.Adj.get(2).element());
 		System.out.println(path);
 	}
+	/**
+	 * The time complexity can be expressed as O(|V|+|E|),
+	 *  since every vertex and every edge will be explored in the worst case.
+	 *   |V| is the number of vertices and |E| is the number of edges in the graph. 
+	 *   Note that O(|E|) may vary between O(1) and O(|V|^{2}), depending on how sparse the input graph is.
+	 */
 
 }
